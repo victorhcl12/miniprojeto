@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Gravitas+One&family=Shojumaru&display=swap');
+
+
+:root{
+  --font-1: "DM Serif Display", serif;
+  --font-2:"Gravitas One", serif;
+}
+
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    font-family: var(--font-1);
+  }
+  
+  .logo {
+    margin-right: 20px; 
+  }
+  
+#login_button{
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pesquisa {
+    display: flex; 
+    align-items: center; 
+    margin-left: auto; 
+  }
+  
+  .pesquisa input {
+    width: 200px; 
+    height: 30px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+  }
+  
+  .pesquisa button {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer; 
+  }
+
+  .login {
+    margin-left: 20px; 
+    
+  }
+  
+  .login a {
+    text-decoration: none;
+    color: #333; 
+  }
+
+  
+
+ #imagem-principal {
+    width: 1280px; 
+    height: 600px;
+    position: relative;
+left: 50%;
+transform: translateX(-50%);    
+transition: background-color 0.6s ease;
+  }
+  
+  
+  .miniaturas {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .miniatura {
+    width: 200px; 
+    height: 125px;
+    margin: 10px; 
+    cursor: pointer; 
+    
+  }
+
+  .miniatura:hover {
+    width: 230px; 
+    height: 150px;
+    margin: 10px; 
+
+  }
+
+  * {box-sizing:border-box}
+
+ 
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    display: none;
+    }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color:rgba(0,0,0,0.8) ;
+  }
+  
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+   
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+ 
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-content {
+    flex-basis: 50%;
+    padding: 50px;
+  }
+  
+  .image-content {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+   
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+  }
+
+  h2{
+    color: #0056b3;
+  }
+
+ 
+
+
+  

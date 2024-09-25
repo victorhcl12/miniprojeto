@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Gravitas+One&family=Shojumaru&display=swap');
+
+
+:root{
+  --font-1: "DM Serif Display", serif;
+  --font-2:"Gravitas One", serif;
+}
+
+
+header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  margin-right: 20px; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pesquisa {
+  display: flex; 
+  align-items: center; 
+  margin-left: auto; 
+}
+
+.pesquisa input {
+  width: 200px; 
+  height: 30px;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+}
+
+.pesquisa button {
+  background-color: #333; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+
+.login {
+  margin-left: 20px; 
+}
+
+.login a {
+  text-decoration: none;
+  color: #333; 
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .overlay h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .overlay p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .overlay button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .overlay button:hover {
+    background-color: white;
+    color: #333;
+  }
+
+
+
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    display: none;
+    }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color:rgba(0,0,0,0.8) ;
+  }
+  
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+   
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+ 
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
+
+
+
+  .container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 340px;
+    flex: 0 0 auto;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-content {
+    padding: 20px;
+    color: white;
+}
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+}
+.card-content p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: white;
+}
+.card-content .platform {
+    background-color: #333;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+.card-content .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.card-content .buttons button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.card-content .buttons button:hover {
+    background-color: #ddd;
+}
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #000;
+}
+.navigation.left {
+    left: 0;
+}
+.navigation.right {
+    right: 0;
+}
+
+.container > p, h1, h2{
+  color: white;
+}
+
+
+
+
+
+
+
+
+.container2 {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+.main-image {
+  width: 100%;
+  height: auto;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #0056D2;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.overlay2 img {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.overlay2 .text2 {
+  max-width: 500px;
+}
+.overlay2 .text2 h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.overlay2 .text2 p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.overlay2 .text2 .release-date {
+  font-weight: bold;
+}
+.overlay2 .text2 .button {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#login_button{
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-media {
+  text-align: center;
+  padding: 50px 0;
+}
+.social-media h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.social-media i {
+  font-size: 40px;
+  margin: 0 15px;
+  color: #333;
+}
+.footer {
+  background-color: #003087;
+  color: white;
+  padding: 40px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .container div {
+  flex: 1;
+}
+.footer h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer .logo {
+  margin-bottom: 20px;
+}
+.footer .logo img {
+  width: 150px;
+}
+.footer .legal {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.footer .legal a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.footer .legal img {
+  width: 50px;
+  margin-top: 20px;
+}
